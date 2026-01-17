@@ -1,0 +1,36 @@
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== IDEs =====
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# ===== Backend (Spring Boot in data-management-system/) =====
+data-management-system/target/
+data-management-system/*.log
+
+# NEVER COMMIT BACKEND SECRETS
+data-management-system/src/main/resources/application.properties
+data-management-system/src/main/resources/application-*.properties
+!data-management-system/src/main/resources/application.example.properties
+
+# ===== Frontend (Angular in frontend/) =====
+frontend/node_modules/
+frontend/dist/
+frontend/.angular/
+frontend/.cache/
+
+# npm logs
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+
+# NEVER COMMIT FRONTEND ENVS (if you want to keep them private)
+frontend/src/environments/environment*.ts
+!frontend/src/environments/environment.example.ts
